@@ -1,24 +1,65 @@
 /*Lincoln Miller Black */
 @font-face {
   font-family: "Lincoln Miller Black";
-  src: url("../fonts/miller-black.otf") type("opentype");
+  src: url("../fonts/miller-black.otf") format("opentype");
   font-weight: 800;
 }
 
 /*Lincoln Proxima Nova Regular */
 @font-face {
   font-family: "Lincoln Proxima Nova Regular";
-  src: url("../fonts/proxima-nova-regular.otf") type("opentype");
+  src: url("../fonts/proxima-nova-regular.otf") format("opentype");
   font-weight: 400;
 }
 
 /*Lincoln Proxima Nova Semibold */
 @font-face {
   font-family: "Lincoln Proxima Nova Semibold";
-  src: url("../fonts/proxima-nova-semibold.otf") type("opentype");
+  src: url("../fonts/proxima-nova-semibold.otf") format("opentype");
   font-weight: 600;
 }
 
 /*Inter*/
 
-/*Include a mobile screen 320px*/
+/*Desktop screen */
+
+.header {
+  width: 100%;
+  min-height: 105px;
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.header h1 {
+  font-family: "Lincoln Proxima Nova SemiBold", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: Regular;
+  font-size: 32px;
+  line-height: 39.6px;
+}
+
+.hero__image {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 20px auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*mobile screen 320px */
+@media screen and (max-width: 320px) {
+  .header {
+    width: 390px;
+    min-height: 116px;
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 24px;
+    line-height: 110;
+  }
+}
