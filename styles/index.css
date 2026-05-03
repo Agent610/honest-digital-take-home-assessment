@@ -115,19 +115,20 @@ body {
 /*mobile screen 320px */
 @media screen and (max-width: 320px) {
   .header {
-    width: 390px;
+    width: 100%;
     min-height: 116px;
-    padding: 20px;
+    padding: 20px 16px;
   }
 
   .header h1 {
-    font-size: 24px;
-    line-height: 110;
+    font-size: 22px;
+    line-height: 1.2;
+    word-break: break-word;
   }
 
-  .header__image {
+  .hero__image {
     height: 520px;
-    background-image: url("../assets/desktop_image.jpg");
+    background-image: url("../assets/mobile_image.png");
     background-size: cover;
     background-position: center;
   }
@@ -141,13 +142,14 @@ body {
   }
 
   .hero__content h2 {
-    font-size: 28px;
-    line-height: 1.1;
+    font-size: 26px;
+    line-height: 1.2;
+    max-width: 280px;
   }
 
   .hero__leasing {
     display: flex;
-    gap: 16px;
+    gap: 12px;
     justify-content: space-between;
     margin-top: 12px;
   }
@@ -169,6 +171,8 @@ body {
     flex-direction: column;
     gap: 12px;
     margin-top: 20px;
+    width: 100%;
+    max-width: 280px;
   }
 
   .hero__images {
@@ -179,5 +183,13 @@ body {
   .hero__offer {
     margin-top: 16px;
     font-size: 12px;
+  }
+
+  .hero__content p {
+    margin: 4px 0;
+  }
+
+  .hero__label {
+    margin-top: 8px;
   }
 }
