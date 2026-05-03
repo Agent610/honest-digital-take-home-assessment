@@ -41,14 +41,71 @@
   line-height: 39.6px;
 }
 
+.hero__content {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  color: white;
+  max-width: 500px;
+}
+
 .hero__image {
   width: 100%;
-  max-width: 800px;
-  display: block;
-  margin: 20px auto;
+  height: 520px;
+  background-image: url("../assets/desktop_image.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero__leasing {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.hero__column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 20px;
+  position: relative;
+}
+
+.hero__column:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #000;
+}
+
+.hero__column strong {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.hero__column span {
+  font-size: 14px;
+}
+
+.hero__offer {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
 }
 /*mobile screen 320px */
 @media screen and (max-width: 320px) {
