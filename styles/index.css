@@ -1,0 +1,24 @@
+/*Lincoln Miller Black */
+@font-face {
+  font-family: "Lincoln Miller Black";
+  src: url("../fonts/miller-black.otf") type("opentype");
+  font-weight: 800;
+}
+
+/*Lincoln Proxima Nova Regular */
+@font-face {
+  font-family: "Lincoln Proxima Nova Regular";
+  src: url("../fonts/proxima-nova-regular.otf") type("opentype");
+  font-weight: 400;
+}
+
+/*Lincoln Proxima Nova Semibold */
+@font-face {
+  font-family: "Lincoln Proxima Nova Semibold";
+  src: url("../fonts/proxima-nova-semibold.otf") type("opentype");
+  font-weight: 600;
+}
+
+/*Inter*/
+
+/*Include a mobile screen 320px*/
