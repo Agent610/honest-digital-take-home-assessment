@@ -44,8 +44,30 @@ body {
   line-height: 39.6px;
 }
 
+.header h2 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  line-height: 38px;
+}
+
+.header p {
+  font-weight: 700;
+  font-style: bold;
+  font-size: 18px;
+  line-height: 38px;
+}
+
 .hero {
   width: 100%;
+}
+
+.hero__label {
+  font-family: "Lincoln Proxima Nova SemiBold", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 20.11px;
 }
 
 .hero__content {
@@ -70,6 +92,7 @@ body {
   display: flex;
   gap: 40px;
   margin-top: 10px;
+  margin-bottom: 32px;
 }
 
 .hero__column {
@@ -87,16 +110,21 @@ body {
   top: 0;
   width: 1px;
   height: 100%;
-  background: #000;
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .hero__column strong {
-  font-size: 18px;
-  font-weight: 700;
+  font-family: "Lincoln Proxima Nova Semibold", Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 30px;
 }
 
 .hero__column span {
-  font-size: 14px;
+  font-family: "Lincoln Proxima Nova Semibold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
 }
 
 .hero__offer {
@@ -107,10 +135,19 @@ body {
   margin-top: 16px;
 }
 
-.hero__buttons {
+.hero__buttons a img {
   display: flex;
   gap: 12px;
   margin-top: 20px;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.hero__buttons a:hover img {
+  opacity: 0.85;
+  transform: scale(1.02);
+  cursor: pointer;
 }
 
 .description__paragraph {
@@ -122,56 +159,58 @@ body {
   font-style: light;
   font-size: 16px;
   line-height: 24px;
+  margin-left: 50px;
 }
 
 .discover__paragraph {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.3;
-  margin: 0 0 12px 0;
+  font-size: 28.34px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-left: 65px;
   color: #000;
 }
 
 .discover__paragraph + p {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 24px;
   color: #000;
-  margin: 0;
+  margin-left: 72px;
   max-width: 900px;
 }
 
 .leasing__paragraph {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.3;
-  margin: 40px 0 12px 0;
+  font-size: 28.24px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-left: 65px;
   color: #000;
 }
 
 .leasing__text {
   font-size: 16px;
-  line-height: 1.6;
-  margin: 0 0 16px 0;
+  line-height: 24px;
+  font-weight: 300;
+  margin-left: 72px;
   color: #000;
 }
 
 .trim__paragraph {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.3;
-  margin: 40px 0 12px 0;
+  font-size: 28.24px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-left: 65px;
   color: #000;
 }
 
 .trim__text {
   font-size: 16px;
-  line-height: 1.6;
-  margin: 0 0 12px 0;
+  line-height: 24px;
+  margin-left: 65px;
   color: #000;
 }
 
 .trim__list {
-  margin: 0 0 16px 20px;
+  margin-left: 65px;
   padding: 0;
 }
 
@@ -183,17 +222,18 @@ body {
 }
 
 .power__paragraph {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.3;
-  margin: 40px 0 12px 0;
+  font-size: 28.24px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-left: 65px;
   color: #000;
 }
 
 .power__text {
   font-size: 16px;
-  line-height: 1.6;
-  margin: 0 0 16px 0;
+  line-height: 24px;
+  margin-left: 65px;
+  font-weight: 300;
   color: #000;
 }
 
@@ -203,32 +243,32 @@ body {
 }
 
 .interior__paragraph {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.3;
-  margin: 40px 0 12px 0;
+  font-size: 28.24px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-left: 62px;
   color: #000;
 }
 
 .interior__text {
   font-size: 16px;
-  line-height: 1.6;
-  margin: 0 0 16px 0;
+  line-height: 24px;
+  margin: 69px;
   color: #000;
 }
 
 .options__paragraph {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.3;
-  margin: 40px 0 12px 0;
+  font-size: 28.24px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-left: 65px;
   color: #000;
 }
 
 .options__text {
   font-size: 16px;
-  line-height: 1.6;
-  margin: 0 0 16px 0;
+  line-height: 24px;
+  margin-left: 65px;
   color: #000;
 }
 
@@ -238,8 +278,9 @@ body {
 }
 
 .options__fineprint {
-  font-size: 12px;
-  line-height: 1.4;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
   color: #555;
   margin-top: 20px;
 }
@@ -258,7 +299,7 @@ hr {
   }
 
   .header h1 {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.2;
     word-break: break-word;
   }
