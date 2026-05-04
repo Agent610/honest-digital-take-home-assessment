@@ -10,7 +10,7 @@ This assessment was built using HTML, CSS, and JavaScript
 Features
 
 - Responsive layout for Desktop and Mobile screens
-- Live demo link ()
+- Live demo link (https://honest-digital-take-home-assessment.vercel.app/)
 
 Technologies used
 
